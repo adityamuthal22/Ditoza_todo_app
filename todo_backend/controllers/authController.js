@@ -61,11 +61,11 @@ const login = async (req, res) => {
 
     // Generate a JWT token
 
-    const expiresIn = 24 * 60 * 60;
+    // const expiresIn = 24 * 60 * 60;
     const token = jwt.sign(
       { user: user._id},
       process.env.secret_key,
-      { expiresIn: expiresIn }
+      // { expiresIn: expiresIn }
     );
 
     res.json({ token });
