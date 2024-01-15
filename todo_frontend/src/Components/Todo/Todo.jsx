@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import AddTodo from "./AddTodo";
 import { toast } from "react-toastify";
+import Navbar from "../Navbar";
 // import { MdAddCircle } from "react-icons/md";
 
 const Todo = () => {
