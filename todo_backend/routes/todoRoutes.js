@@ -5,7 +5,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
 // Create a new todo 
-router.post('/toto', authMiddleware, todoController.createtodo);
+router.post('/todo', authMiddleware, todoController.createtodo);
 
 // Get all todos
 router.get('/todo', authMiddleware, todoController.getAlltodos);
